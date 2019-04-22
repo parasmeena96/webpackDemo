@@ -1,0 +1,43 @@
+.mario {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 10s;
+       
+}
+.sky {
+    min-height: 200px;
+    background: lightblue;
+    width: 100%;
+}
+.grass {
+    min-height: 150px;
+    background: green;
+}
+.road {
+    height: 300px;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+    position: relative;
+}
+.lines{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    
+}
+
+
+
+
+@keyframes drive{
+    from { transform: translateX(0)}
+    to { transform: translatex(1000px)}
+}
