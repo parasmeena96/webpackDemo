@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "lite-server"
+    "bulid": "lite-server",
+    "sass": "node-sass --watch src/sass/style.scss -o src/css --output-style compressed"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "lite-server": "^2.4.0",
+    "node-sass": "^4.12.0",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1"
-  }
+  },
+  "dependencies": {}
 }
