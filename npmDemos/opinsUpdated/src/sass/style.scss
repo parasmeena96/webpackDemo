@@ -122,6 +122,12 @@ h6 {
   letter-spacing: 1px;
   color: #fff;
   font-family: "Gothic A1", sans-serif;
+
+  @include tablets {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    font-size: 100%;
+  }
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -163,6 +169,10 @@ nav {
   background-size: cover;
   min-height: 480px;
   width: 100%;
+
+  @include tablets {
+    min-height: 380px;
+  }
 }
 
 .banner-text {
@@ -175,6 +185,10 @@ nav {
   @include desktop {
     top: 45%;
     width: 95%;
+  }
+  @include tablets {
+    width: 92%;
+    top: 35%;
   }
 }
 
@@ -223,6 +237,9 @@ div#collapsibleNavbar ul li:last-child {
   text-align: left;
   position: absolute;
   top: 13%;
+  @include tablets {
+    width: 50%;
+  }
 }
 
 .hero_rightSide_image {
@@ -410,7 +427,6 @@ a:hover > .ico {
 .company_logo_main ul li {
   list-style: none;
   display: inline-block;
-  margin: 0 auto;
   width: 19%;
   text-align: center;
 }
@@ -1157,8 +1173,16 @@ p {
   margin: 0 15px;
   padding: 25px;
   background: #fff;
+  @include tablets {
+    padding: 10px;
+  }
 }
-
+.d-flex.justify-content-between.effective_tools-items .item.tools-items ul li h4 {
+    font-size: 24px;
+    @include tablets{
+        font-size: 16px;
+    }
+}
 .d-flex.justify-content-between.effective_tools-items .item.tools-items:first-child {
   margin-left: 0;
 }
@@ -1500,6 +1524,9 @@ small.basic_packthree::after {
 
 .checkOut.py-5 .heading_ask_want.text-center.py-5.mx-auto {
   width: 30%;
+  @include desktop {
+    width: 35%;
+  }
 }
 
 .checkOut_inner_content.d-flex.justify-content-between .item.checkout_item .checkout_item_date_time {
@@ -1543,6 +1570,9 @@ small.basic_packthree::after {
   width: 23%;
   @include desktop {
     width: 25%;
+  }
+  @include tablets {
+    width: 35%;
   }
 }
 
@@ -1599,6 +1629,9 @@ section.subscribeNow.py-5 .row .main_content_subscribe.mx-auto form.mx-auto .for
   padding: 12px 14px;
   margin: 0 5px;
   cursor: pointer;
+  @include desktop {
+    padding: 8px 10px;
+  }
 }
 
 .item.list-footer.social_icon ul li a:hover {
@@ -1628,7 +1661,7 @@ section.subscribeNow.py-5 .row .main_content_subscribe.mx-auto form.mx-auto .for
   border-radius: 10px;
   padding: 15px;
   @include desktop {
-    margin: 0;
+    margin: 0 !important;
   }
 }
 .testimonialSlider.py-5
